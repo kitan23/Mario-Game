@@ -12,9 +12,11 @@ public class QuestionBlock : MonoBehaviour
     public Sprite emptyBlockSprite; 
     private Vector2 originalPosition; 
     private bool canBounce = true; 
+    public AudioSource popSound; 
     // Start is called before the first frame update
     void Start()
     {
+        popSound = GetComponent<AudioSource>(); 
         originalPosition = transform.localPosition; 
         
     }
@@ -42,6 +44,7 @@ public class QuestionBlock : MonoBehaviour
 
     void presentCoin ()
     {
+        popSound.Play(); 
         GameObject spinningCoin = (GameObject)Instantiate (Resources.Load("Prefabs/Spinning_Coin", typeof(GameObject)));
         spinningCoin.transform.SetParent (this.transform.parent); 
         spinningCoin.transform.localPosition = new Vector2 (originalPosition.x, originalPosition.y + 1); 

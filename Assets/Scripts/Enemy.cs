@@ -23,7 +23,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         enabled = false; 
-        Fall(); 
     }
 
     // Update is called once per frame
@@ -134,6 +133,7 @@ public class Enemy : MonoBehaviour
         }
         else 
         {
+            Debug.Log("No Ground");
             if (state != EnemyState.walking)
             {
                 Fall(); 
@@ -182,11 +182,11 @@ public class Enemy : MonoBehaviour
         enabled = true; 
     }
 
-    private void OnBecameInvisible ()
-    {
-        enabled = false; 
-    }
- 
+    // private void OnBecameInvisible ()
+    // {
+    //     enabled = false; 
+    // }
+
     void Fall ()
     {
         velocity.y = 0; 
