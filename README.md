@@ -81,7 +81,7 @@ A fully-featured, from-scratch 2D Mario platformer built in Unity and C#. This p
 
 ## 🎥 Gameplay Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tI_VpxxEOI8?si=dRWnAnd8EZMp_8yI&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/tI_VpxxEOI8/hqdefault.jpg)](https://youtu.be/tI_VpxxEOI8)
 
 ## 📜 License
 
